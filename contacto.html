@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Fórmula 1 2026</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="titulo-principal">Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="clasificacion.html">Clasificación</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Formulario de Contacto</h2>
-        <p>Completa el formulario para dejarnos tu mensaje sobre la temporada 2026 de Fórmula 1.</p>
-
-        <form>
-            <div>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <div>
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-            </div>
+    <div class="container my-4">
+        <header class="mb-4">
+            <h1 class="titulo-principal">Contacto</h1>
+        </header>
 
-            <div>
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-            </div>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form class="p-3 bg-light rounded shadow">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger efecto-transicion">Enviar</button>
+            </form>
+        </section>
+    </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Enlaces útiles</h2>
-        <p>Visita la <a href="https://www.formula1.com" target="_blank">web oficial de la Fórmula 1</a> para más
-            información.</p>
-    </section>
-
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>© 2026 Fórmula 1 Fan Page</p>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
