@@ -16,19 +16,41 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
+                    <!-- Dropdown del carrito -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                            style="min-width: 250px;">
+                            <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
+                            <li>
+                                <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <div class="container my-4">
         <section>
@@ -46,134 +68,150 @@
                     <tr>
                         <td>1</td>
                         <td>George Russell</td>
-                        <td><img src="img/mercedes.png" alt="Mercedes" class="efecto-transicion"> Mercedes</td>
+                        <td><img src="img/logos-escuderias/mercedes.png" alt="Mercedes" class="efecto-transicion">
+                            Mercedes</td>
                         <td>51</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Kimi Antonelli</td>
-                        <td><img src="img/mercedes.png" alt="Mercedes" class="efecto-transicion"> Mercedes</td>
+                        <td><img src="img/logos-escuderias/mercedes.png" alt="Mercedes" class="efecto-transicion">
+                            Mercedes</td>
                         <td>47</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Charles Leclerc</td>
-                        <td><img src="img/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari</td>
+                        <td><img src="img/logos-escuderias/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari
+                        </td>
                         <td>34</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Lewis Hamilton</td>
-                        <td><img src="img/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari</td>
+                        <td><img src="img/logos-escuderias/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari
+                        </td>
                         <td>33</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>Oliver Bearman</td>
-                        <td><img src="img/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
+                        <td><img src="img/logos-escuderias/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
                         <td>17</td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>Lando Norris</td>
-                        <td><img src="img/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren</td>
+                        <td><img src="img/logos-escuderias/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren
+                        </td>
                         <td>15</td>
                     </tr>
                     <tr>
                         <td>7</td>
                         <td>Pierre Gasly</td>
-                        <td><img src="img/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine</td>
+                        <td><img src="img/logos-escuderias/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine
+                        </td>
                         <td>9</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>Max Verstappen</td>
-                        <td><img src="img/redbull.png" alt="Red Bull" class="efecto-transicion"> Red Bull</td>
+                        <td><img src="img/logos-escuderias/redbull.png" alt="Red Bull" class="efecto-transicion"> Red
+                            Bull</td>
                         <td>8</td>
                     </tr>
                     <tr>
                         <td>9</td>
                         <td>Liam Lawson</td>
-                        <td><img src="img/rb.png" alt="RB" class="efecto-transicion"> RB</td>
+                        <td><img src="img/logos-escuderias/rb.png" alt="RB" class="efecto-transicion"> RB</td>
                         <td>8</td>
                     </tr>
                     <tr>
                         <td>10</td>
                         <td>Arvid Lindblad</td>
-                        <td><img src="img/rb.png" alt="RB" class="efecto-transicion"> RB</td>
+                        <td><img src="img/logos-escuderias/rb.png" alt="RB" class="efecto-transicion"> RB</td>
                         <td>4</td>
                     </tr>
                     <tr>
                         <td>11</td>
                         <td>Isack Hadjar</td>
-                        <td><img src="img/redbull.png" alt="Red Bull" class="efecto-transicion"> Red Bull</td>
+                        <td><img src="img/logos-escuderias/redbull.png" alt="Red Bull" class="efecto-transicion"> Red
+                            Bull</td>
                         <td>4</td>
                     </tr>
                     <tr>
                         <td>12</td>
                         <td>Oscar Piastri</td>
-                        <td><img src="img/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren</td>
+                        <td><img src="img/logos-escuderias/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren
+                        </td>
                         <td>3</td>
                     </tr>
                     <tr>
                         <td>13</td>
                         <td>Carlos Sainz</td>
-                        <td><img src="img/williams.png" alt="Williams" class="efecto-transicion"> Williams</td>
+                        <td><img src="img/logos-escuderias/williams.png" alt="Williams" class="efecto-transicion">
+                            Williams</td>
                         <td>2</td>
                     </tr>
                     <tr>
                         <td>14</td>
                         <td>Gabriel Bortoleto</td>
-                        <td><img src="img/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
+                        <td><img src="img/logos-escuderias/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
                         <td>2</td>
                     </tr>
                     <tr>
                         <td>15</td>
                         <td>Franco Colapinto</td>
-                        <td><img src="img/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine</td>
+                        <td><img src="img/logos-escuderias/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine
+                        </td>
                         <td>1</td>
                     </tr>
                     <tr>
                         <td>16</td>
                         <td>Esteban Ocon</td>
-                        <td><img src="img/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
+                        <td><img src="img/logos-escuderias/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>17</td>
                         <td>Nico Hülkenberg</td>
-                        <td><img src="img/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
+                        <td><img src="img/logos-escuderias/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>18</td>
                         <td>Alex Albon</td>
-                        <td><img src="img/williams.png" alt="Williams" class="efecto-transicion"> Williams</td>
+                        <td><img src="img/logos-escuderias/williams.png" alt="Williams" class="efecto-transicion">
+                            Williams</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>19</td>
                         <td>Valtteri Bottas</td>
-                        <td><img src="img/cadillac.png" alt="Cadillac" class="efecto-transicion"> Cadillac</td>
+                        <td><img src="img/logos-escuderias/cadillac.png" alt="Cadillac" class="efecto-transicion">
+                            Cadillac</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>20</td>
                         <td>Sergio Pérez</td>
-                        <td><img src="img/cadillac.png" alt="Cadillac" class="efecto-transicion"> Cadillac</td>
+                        <td><img src="img/logos-escuderias/cadillac.png" alt="Cadillac" class="efecto-transicion">
+                            Cadillac</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>21</td>
                         <td>Fernando Alonso</td>
-                        <td><img src="img/astonmartin.png" alt="Aston Martin" class="efecto-transicion"> Aston Martin
+                        <td><img src="img/logos-escuderias/astonmartin.png" alt="Aston Martin"
+                                class="efecto-transicion"> Aston Martin
                         </td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>22</td>
                         <td>Lance Stroll</td>
-                        <td><img src="img/astonmartin.png" alt="Aston Martin" class="efecto-transicion"> Aston Martin
+                        <td><img src="img/logos-escuderias/astonmartin.png" alt="Aston Martin"
+                                class="efecto-transicion"> Aston Martin
                         </td>
                         <td>0</td>
                     </tr>
@@ -194,57 +232,65 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td><img src="img/mercedes.png" alt="Mercedes" class="efecto-transicion"> Mercedes</td>
+                        <td><img src="img/logos-escuderias/mercedes.png" alt="Mercedes" class="efecto-transicion">
+                            Mercedes</td>
                         <td>98</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><img src="img/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari</td>
+                        <td><img src="img/logos-escuderias/ferrari.png" alt="Ferrari" class="efecto-transicion"> Ferrari
+                        </td>
                         <td>67</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><img src="img/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren</td>
+                        <td><img src="img/logos-escuderias/mclaren.png" alt="McLaren" class="efecto-transicion"> McLaren
+                        </td>
                         <td>18</td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td><img src="img/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
+                        <td><img src="img/logos-escuderias/haas.png" alt="Haas" class="efecto-transicion"> Haas</td>
                         <td>17</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td><img src="img/redbull.png" alt="Red Bull" class="efecto-transicion"> Red Bull</td>
+                        <td><img src="img/logos-escuderias/redbull.png" alt="Red Bull" class="efecto-transicion"> Red
+                            Bull</td>
                         <td>12</td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td><img src="img/rb.png" alt="RB" class="efecto-transicion"> RB</td>
+                        <td><img src="img/logos-escuderias/rb.png" alt="RB" class="efecto-transicion"> RB</td>
                         <td>12</td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td><img src="img/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine</td>
+                        <td><img src="img/logos-escuderias/alpine.png" alt="Alpine" class="efecto-transicion"> Alpine
+                        </td>
                         <td>10</td>
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td><img src="img/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
+                        <td><img src="img/logos-escuderias/audi.png" alt="Audi" class="efecto-transicion"> Audi</td>
                         <td>2</td>
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td><img src="img/williams.png" alt="Williams" class="efecto-transicion"> Williams</td>
+                        <td><img src="img/logos-escuderias/williams.png" alt="Williams" class="efecto-transicion">
+                            Williams</td>
                         <td>2</td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td><img src="img/cadillac.png" alt="Cadillac" class="efecto-transicion"> Cadillac</td>
+                        <td><img src="img/logos-escuderias/cadillac.png" alt="Cadillac" class="efecto-transicion">
+                            Cadillac</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td><img src="img/astonmartin.png" alt="Aston Martin" class="efecto-transicion"> Aston Martin
+                        <td><img src="img/logos-escuderias/astonmartin.png" alt="Aston Martin"
+                                class="efecto-transicion"> Aston Martin
                         </td>
                         <td>0</td>
                     </tr>
@@ -254,11 +300,14 @@
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p>© 2026 Fórmula 1 Fan Page</p>
+        <p>© 2026 F1 - Todos los derechos reservados</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="navbar.js"></script>
+
 </body>
 
 </html>

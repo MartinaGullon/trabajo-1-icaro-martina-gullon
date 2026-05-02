@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Imágenes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
+                    <!-- Dropdown del carrito -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                            style="min-width: 250px;">
+                            <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
+                            <li>
+                                <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Galería de Autos F1</h2>
+
+        <!-- Imagen principal -->
+        <div class="text-center mb-4">
+            <img id="imagen-principal" src="img/galeria/auto-presentacion.webp" class="img-fluid rounded shadow"
+                alt="Auto F1 2026" data-bs-toggle="modal" data-bs-target="#modalImagen">
+        </div>
+
+        <!-- Miniaturas -->
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <img src="img/galeria/auto-alpine.webp" class="img-thumbnail galeria-thumb" alt="Auto Alpine" width="150">
+            <img src="img/galeria/auto-mclaren.webp" class="img-thumbnail galeria-thumb" alt="Auto McLaren" width="150">
+            <img src="img/galeria/auto-mercedes.avif" class="img-thumbnail galeria-thumb" alt="Auto Mercedes"
+                width="150">
+            <img src="img/galeria/auto-red-bull.avif" class="img-thumbnail galeria-thumb" alt="Auto Red Bull"
+                width="150">
+            <img src="img/galeria/auto-aston-martin.jpeg" class="img-thumbnail galeria-thumb" alt="Auto Aston Martin"
+                width="150">
+            <img src="img/galeria/auto-audi.jpg" class="img-thumbnail galeria-thumb" alt="Auto Audi" width="150">
+            <img src="img/galeria/auto-cadillac.jpg" class="img-thumbnail galeria-thumb" alt="Auto Cadillac"
+                width="150">
+            <img src="img/galeria/auto-ferrari.jpg" class="img-thumbnail galeria-thumb" alt="Auto Ferrari" width="150">
+            <img src="img/galeria/auto-haas.jpeg" class="img-thumbnail galeria-thumb" alt="Auto Haas" width="150">
+            <img src="img/galeria/auto-rb.jpg" class="img-thumbnail galeria-thumb" alt="Auto RB" width="150">
+            <img src="img/galeria/auto-williams.avif" class="img-thumbnail galeria-thumb" alt="Auto Williams"
+                width="150">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalImagen" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body text-center position-relative">
+                    <button id="prev-btn"
+                        class="btn btn-light btn-lg position-absolute top-50 start-0 translate-middle-y"
+                        style="z-index: 10;">←</button>
+
+                    <img id="imagen-modal" src="img/galeria/auto-alpine.webp" class="img-fluid rounded"
+                        alt="Imagen ampliada">
+
+                    <button id="next-btn" class="btn btn-light btn-lg position-absolute top-50 end-0 translate-middle-y"
+                        style="z-index: 10;">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2026 F1 - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script de la galería -->
+    <script src="galeria.js"></script>
+    <!-- Script del navbar -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>
