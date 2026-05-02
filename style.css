@@ -9,8 +9,9 @@ body {
 /* Clases personalizadas */
 .titulo-principal {
     color: #ff0000;
-    font-size: 2em;
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .imagen-sombra {
@@ -47,11 +48,7 @@ section p {
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    font-size: 1rem;
 }
 
 /* Responsividad con media queries */
@@ -64,18 +61,12 @@ footer {
         font-size: 0.9em;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
     nav ul {
         flex-direction: column;
         text-align: center;
     }
 }
 
-/* Ajustes adicionales para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .titulo-principal {
         font-size: 1.2em;
@@ -94,4 +85,105 @@ footer {
     footer {
         font-size: 0.9em;
     }
+}
+
+/* Estilos para la tienda */
+.card-img-top {
+    height: 250px;          /* altura fija para uniformidad */
+    object-fit: contain;    /* muestra la imagen completa */
+    background-color: #fff; /* relleno por si sobra espacio */
+    border-radius: 6px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Botones principales */
+.btn-danger {
+    background-color: #d40000;
+    border-color: #d40000;
+}
+
+.btn-danger:hover {
+    background-color: #b30000;
+    border-color: #b30000;
+}
+
+/* Carrito */
+#cart-list {
+    max-width: 600px;
+    margin: auto;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#cart-list li span {
+    font-weight: bold;
+}
+
+/* Estilos para la calculadora */
+#formCalculadora {
+    transition: box-shadow 0.3s ease;
+}
+
+#formCalculadora:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#resultado {
+    color: #d40000; 
+}
+
+/* Animación fade para mensajes */
+.alert.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.alert.show {
+  opacity: 1;
+}
+
+/* Imagen principal de la galería */
+#imagen-principal {
+  width: 100%;
+  max-height: 400px;     /* altura máxima uniforme */
+  object-fit: cover;     /* recorta proporcionalmente */
+  border-radius: 8px;
+}
+
+/* Miniaturas de la galería */
+.galeria-thumb {
+  width: 180px;          /* ancho fijo */
+  height: 120px;         /* altura fija */
+  object-fit: cover;     /* recorta proporcionalmente */
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.galeria-thumb:hover {
+  transform: scale(1.05); /* efecto al pasar el mouse */
+}
+
+/* Imagen dentro del modal */
+#imagen-modal {
+  width: 100%;
+  max-height: 600px;     /* altura máxima uniforme */
+  object-fit: contain;   /* se adapta sin recortar */
+  border-radius: 8px;
 }
