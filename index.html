@@ -12,127 +12,132 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
-                    <!-- Dropdown del carrito -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
-                            style="min-width: 250px;">
-                            <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
-                            <li>
-                                <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <!-- Dropdown del carrito -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                                style="min-width: 250px;">
+                                <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
+                                <li>
+                                    <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <img src="img/bannerf1.jpg" alt="Fórmula 1 2026" class="imagen-sombra efecto-transicion img-fluid w-100">
+
+        <div class="container my-4">
+            <section>
+                <h2>Bienvenidos</h2>
+                <p>La temporada 2026 de la Fórmula 1 promete grandes emociones, nuevos reglamentos y la lucha de los
+                    mejores
+                    pilotos y escuderías del mundo.</p>
+                <p>Acá vas a encontrar todas las noticias, los resultados, las tablas de clasificación y más.</p>
+            </section>
+
+            <section>
+                <h2>Pilotos y escuderías</h2>
+                <table class="table table-striped table-hover">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Escudería</th>
+                            <th>Piloto 1</th>
+                            <th>Piloto 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alpine</td>
+                            <td>Pierre Gasly</td>
+                            <td>Franco Colapinto</td>
+                        </tr>
+                        <tr>
+                            <td>Aston Martin</td>
+                            <td>Fernando Alonso</td>
+                            <td>Lance Stroll</td>
+                        </tr>
+                        <tr>
+                            <td>Audi</td>
+                            <td>Nico Hülkenberg</td>
+                            <td>Gabriel Bortoleto</td>
+                        </tr>
+                        <tr>
+                            <td>Cadillac</td>
+                            <td>Valtteri Bottas</td>
+                            <td>Sergio Pérez</td>
+                        </tr>
+                        <tr>
+                            <td>Ferrari</td>
+                            <td>Lewis Hamilton</td>
+                            <td>Charles Leclerc</td>
+                        </tr>
+                        <tr>
+                            <td>Haas</td>
+                            <td>Oliver Bearman</td>
+                            <td>Esteban Ocon</td>
+                        </tr>
+                        <tr>
+                            <td>McLaren</td>
+                            <td>Lando Norris</td>
+                            <td>Oscar Piastri</td>
+                        </tr>
+                        <tr>
+                            <td>Mercedes</td>
+                            <td>George Russell</td>
+                            <td>Kimi Antonelli</td>
+                        </tr>
+                        <tr>
+                            <td>RB</td>
+                            <td>Liam Lawson</td>
+                            <td>Arvid Lindblad</td>
+                        </tr>
+                        <tr>
+                            <td>Red Bull</td>
+                            <td>Max Verstappen</td>
+                            <td>Isack Hadjar</td>
+                        </tr>
+                        <tr>
+                            <td>Williams</td>
+                            <td>Alex Albon</td>
+                            <td>Carlos Sainz</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
-    </nav>
-
-
-    <!-- Banner -->
-    <img src="img/bannerf1.jpg" alt="Fórmula 1 2026" class="imagen-sombra efecto-transicion img-fluid w-100">
-
-    <div class="container my-4">
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>La temporada 2026 de la Fórmula 1 promete grandes emociones, nuevos reglamentos y la lucha de los mejores
-                pilotos y escuderías del mundo.</p>
-            <p>Acá vas a encontrar todas las noticias, los resultados, las tablas de clasificación y más.</p>
-        </section>
-
-        <section>
-            <h2>Pilotos y escuderías</h2>
-            <table class="table table-striped table-hover">
-                <thead class="table-danger">
-                    <tr>
-                        <th>Escudería</th>
-                        <th>Piloto 1</th>
-                        <th>Piloto 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alpine</td>
-                        <td>Pierre Gasly</td>
-                        <td>Franco Colapinto</td>
-                    </tr>
-                    <tr>
-                        <td>Aston Martin</td>
-                        <td>Fernando Alonso</td>
-                        <td>Lance Stroll</td>
-                    </tr>
-                    <tr>
-                        <td>Audi</td>
-                        <td>Nico Hülkenberg</td>
-                        <td>Gabriel Bortoleto</td>
-                    </tr>
-                    <tr>
-                        <td>Cadillac</td>
-                        <td>Valtteri Bottas</td>
-                        <td>Sergio Pérez</td>
-                    </tr>
-                    <tr>
-                        <td>Ferrari</td>
-                        <td>Lewis Hamilton</td>
-                        <td>Charles Leclerc</td>
-                    </tr>
-                    <tr>
-                        <td>Haas</td>
-                        <td>Oliver Bearman</td>
-                        <td>Esteban Ocon</td>
-                    </tr>
-                    <tr>
-                        <td>McLaren</td>
-                        <td>Lando Norris</td>
-                        <td>Oscar Piastri</td>
-                    </tr>
-                    <tr>
-                        <td>Mercedes</td>
-                        <td>George Russell</td>
-                        <td>Kimi Antonelli</td>
-                    </tr>
-                    <tr>
-                        <td>RB</td>
-                        <td>Liam Lawson</td>
-                        <td>Arvid Lindblad</td>
-                    </tr>
-                    <tr>
-                        <td>Red Bull</td>
-                        <td>Max Verstappen</td>
-                        <td>Isack Hadjar</td>
-                    </tr>
-                    <tr>
-                        <td>Williams</td>
-                        <td>Alex Albon</td>
-                        <td>Carlos Sainz</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
+    </main>
 
     <footer class="bg-dark text-white text-center py-3">
         <p>© 2026 F1 - Todos los derechos reservados</p>

@@ -12,50 +12,52 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
-                    <!-- Dropdown del carrito -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
-                            style="min-width: 250px;">
-                            <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
-                            <li>
-                                <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo-principal" href="index.html">F1 2026</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tareas.html">Tareas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <!-- Dropdown del carrito -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop <span id="navbar-cart-count" class="badge bg-danger">0</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                                style="min-width: 250px;">
+                                <li><span class="dropdown-item-text fw-bold">Carrito</span></li>
+                                <li>
+                                    <div id="navbar-cart-items" class="px-3 small">Carrito vacío</div>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center" href="shop.html">Ver shop completo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-
-    <div class="container my-4">
-        <header class="mb-4">
+    <main class="container my-4">
+        <section class="mb-4">
             <h1 class="titulo-principal">Noticias - Fórmula 1 2026</h1>
-        </header>
+        </section>
 
         <section>
             <h2>Últimas Noticias</h2>
@@ -84,7 +86,7 @@
                     target="_blank" class="btn btn-link">Leer más en espn.com.ar</a>
             </article>
         </section>
-    </div>
+    </main>
 
     <footer class="bg-dark text-white text-center py-3">
         <p>© 2026 F1 - Todos los derechos reservados</p>
